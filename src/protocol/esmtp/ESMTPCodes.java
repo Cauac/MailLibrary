@@ -1,0 +1,25 @@
+package protocol.esmtp;
+
+interface ESMTPCodes {
+
+    int START_SESSION = 220;
+    int CLOSE_SESSION = 221;
+    int SUCCESS_AUTH = 235;
+    int SUCCESS_OPERATION = 250;
+    int START_AUTH = 334;
+    int START_DATA_TRANSFER = 351;
+    int SERVICE_UNAVAILABLE = 421;
+    int MAILBOX_BUSY = 450;
+    int LOCAL_ERROR = 451;
+    int INSUFFICIENT_SYSTEM_STORAGE = 452;
+    int SYNTAX_ERROR = 500;
+    int ARGUMENTS_SYNTAX_ERROR = 501;
+    int BAD_COMMAND = 502;
+    int BAD_SEQUENCE = 503;
+    int PARAMETER_FAIL = 504;
+    int MAILBOX_UNAVAILABLE = 550;
+    int STORAGE_ALLOCATION = 552;
+    int USER_NOT_LOCAL = 551;
+    int NAME_MAILBOX_FAIL = 553;
+    int TRANSACTION_FAIL = 554;
+}
